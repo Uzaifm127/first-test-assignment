@@ -1,0 +1,126 @@
+#container {
+  margin: auto;
+  color: #1f2128;
+  font-size: 14px;
+  font-weight: 400;
+  width: 23rem;
+  padding: 10px 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  margin-top: 85px;
+  box-shadow: 0px 8px 15px 0px #1414141f, 0px 0px 4px 0px #1414141a;
+}
+
+.checkbox-item {
+  width: 100%;
+  cursor: pointer;
+  padding: 6px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-item:hover .checkbox-checked {
+  background-color: #5087f8;
+}
+
+.checkbox-item:hover .checkbox-unchecked {
+  stroke: #8d8d8d;
+}
+
+.checkbox-item:hover .tick-unchecked {
+  stroke: #e3e3e3;
+}
+
+.checkbox-item:active .checkbox-container {
+  border-color: #246af61a;
+}
+
+#checkboxes-list {
+  height: 10rem;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+.checkbox-container {
+  position: relative;
+  height: 29px;
+  cursor: pointer;
+  border-radius: 9px;
+  border: 3px solid transparent;
+}
+
+.checkbox-unchecked {
+  stroke: #cdcdcd;
+}
+
+.checkbox-checked {
+  stroke: none;
+  background-color: #2469f6;
+  border-radius: 6px; /* Because of background-color property, if we give fill then the blue shade won't match the original one. */
+}
+
+.checkbox-container:hover .checkbox-checked {
+  background-color: #5087f8;
+}
+
+.checkbox-container:hover .checkbox-unchecked {
+  stroke: #8d8d8d;
+}
+
+.checkbox-container:active {
+  border-color: #246af61a;
+}
+
+.tick-unchecked {
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  left: 3.5px;
+  stroke: white;
+}
+
+.tick-check {
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  left: 3.5px;
+  stroke: white;
+}
+
+.checkbox-container:hover .tick-unchecked {
+  stroke: #e3e3e3;
+}
+
+.checkbox-container:active .tick-unchecked {
+  stroke: #878787;
+}
+
+hr {
+  background-color: #cdcdcd;
+  margin: 10px 0px;
+  width: 100%;
+  border-radius: 9999px;
+  height: 1px;
+  border: none;
+}
+
+#id-btn {
+  background-color: #ffce22;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#id-btn:hover {
+  background-color: #ffd84d;
+}
+
+#id-btn:active {
+  background-color: #ffce22;
+}
